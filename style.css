@@ -1,0 +1,94 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* background-image:url(files/calc-background.jpg); */
+  background-color: black;
+  background-size:cover;
+}
+
+#ilawMode {
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 3rem;
+  right: 3.5rem;
+}
+
+#container {
+  border: 1px solid white;
+  border-radius: 15px;
+  top: 10rem;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+}
+
+#container .ntrdNum {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 100px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  text-align: right;
+  font-size: 2.5rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#operator {
+  color: aquamarine;
+}
+#decimal {
+  color: aquamarine;
+}
+#percent {
+  color: aquamarine;
+}
+#equal {
+  color: aquamarine;
+  grid-area: 2/4/6/5;
+  height: 100%;
+  font-size: 50px;
+}
+#allclear {
+  color: tomato;  
+}
+#delete {
+  color: tomato;  
+}
+#parenthesis {
+  color: aquamarine;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding:10px;
+}
+.btn {
+  height: 70px;
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: transparent; /*rgb(0, 0, 0, 0.3)*/
+  font-size: 2rem;
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(150, 150, 150, 0.3);
+}
+.btn:active {
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+
